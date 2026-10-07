@@ -295,3 +295,76 @@ footer {
 
 }
 
+/* =========================================
+   TARJETAS INTERACTIVAS
+   ========================================= */
+
+.area-link {
+    display: block;
+
+    color: inherit;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+/* Evita el estilo típico de los enlaces */
+
+.area-link h3,
+.area-link p {
+    text-decoration: none;
+}
+
+
+/* INDICADOR "VER INFORMACIÓN" */
+
+.ver-mas {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: #2f7251;
+
+    font-size: 0.78rem;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    opacity: 0.65;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* EFECTO AL PASAR EL CURSOR */
+
+.area-link:hover {
+    transform: translateY(-5px);
+
+    border-color: #7da58f;
+
+    box-shadow:
+        0 12px 30px rgba(30, 50, 40, 0.13);
+
+    background: #ffffff;
+}
+
+
+/* El indicador también reacciona */
+
+.area-link:hover .ver-mas {
+    opacity: 1;
+
+    transform: translateX(4px);
+}
+
+
+/* ACCESIBILIDAD: NAVEGACIÓN CON TECLADO */
+
+.area-link:focus-visible {
+    outline: 2px solid #2f7251;
+    outline-offset: 4px;
+}
