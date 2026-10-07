@@ -812,6 +812,23 @@ footer {
     line-height: 1.7;
 }
 
+.leer-articulo {
+    display: inline-block;
+    margin-top: 18px;
+
+    color: #9a7b48;
+    font-size: 0.82rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.leer-articulo:hover {
+    color: #24352d;
+    transform: translateX(4px);
+}
 
 /* Adaptación para celular */
 
