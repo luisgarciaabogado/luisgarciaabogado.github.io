@@ -464,11 +464,10 @@ footer {
     gap: 30px;
 }
 
-.nav-marca {
-    color: #17221d;
+.nav-titulo {
+    color: #66594d;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1rem;
-    text-decoration: none;
+    font-size: 0.9rem;
     white-space: nowrap;
 }
 
