@@ -591,6 +591,39 @@ footer {
 .accesibilidad-panel.activo {
     display: block;
 }
+/* ENCABEZADO DEL PANEL */
+
+.accesibilidad-encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 14px;
+}
+
+.accesibilidad-encabezado h2 {
+    margin-bottom: 0;
+}
+
+.accesibilidad-cerrar {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 3px 8px !important;
+
+    background: transparent !important;
+    border: none !important;
+
+    color: #3b3025 !important;
+
+    font-size: 1.4rem !important;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.accesibilidad-cerrar:hover {
+    color: #2f7251 !important;
+}
 .accesibilidad-panel h2 {
     margin-bottom: 18px;
 
