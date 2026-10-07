@@ -826,3 +826,25 @@ body.enlaces-resaltados .area-link {
 body.enlaces-resaltados .boton {
     text-decoration: underline !important;
 }
+
+/* =========================================
+   TEXTO MÁS LEGIBLE
+   ========================================= */
+
+body.texto-legible {
+    line-height: 1.9;
+}
+
+body.texto-legible p,
+body.texto-legible h1,
+body.texto-legible h2,
+body.texto-legible h3,
+body.texto-legible a,
+body.texto-legible button {
+    letter-spacing: 0.06em;
+    word-spacing: 0.12em;
+}
+
+body.texto-legible p {
+    line-height: 1.9;
+}
