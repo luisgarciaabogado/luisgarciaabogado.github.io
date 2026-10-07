@@ -160,3 +160,22 @@ botonResaltarEnlaces.addEventListener("click", function () {
     );
 
 });
+
+/* =========================================
+   TEXTO MÁS LEGIBLE
+   ========================================= */
+
+const botonTextoLegible =
+    document.getElementById("texto-legible");
+
+botonTextoLegible.addEventListener("click", function () {
+
+    const textoLegibleActivo =
+        document.body.classList.toggle("texto-legible");
+
+    botonTextoLegible.setAttribute(
+        "aria-pressed",
+        textoLegibleActivo
+    );
+
+});
