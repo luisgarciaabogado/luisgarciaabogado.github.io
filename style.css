@@ -620,6 +620,165 @@ header {
 }
 
 /* =========================================
+   PÁGINA DE ARTÍCULOS
+   ========================================= */
+
+/* Encabezado editorial */
+
+.header-articulos {
+    display: block;
+
+    padding-top: 90px;
+    padding-bottom: 70px;
+
+    border-bottom: 1px solid #d8ccb7;
+}
+
+.identidad-articulos {
+    max-width: 850px;
+}
+
+.articulos-etiqueta {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #9a7b48;
+
+    font-size: 0.78rem;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.header-articulos h1 {
+    max-width: 900px;
+
+    color: #17221d;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+
+    font-weight: normal;
+    line-height: 1.08;
+    letter-spacing: -1.2px;
+}
+
+.header-articulos .articulos-introduccion {
+    max-width: 650px;
+
+    margin-top: 28px;
+
+    color: #62615b;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+
+    line-height: 1.7;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+
+/* Sección de publicaciones */
+
+.seccion-articulos {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.lista-articulos {
+    margin-top: 35px;
+}
+
+.tarjeta-articulo {
+    max-width: 800px;
+
+    padding: 32px 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2ddd4;
+    border-left: 3px solid #9a7b48;
+
+    border-radius: 3px;
+
+    box-shadow:
+        0 4px 18px rgba(30, 50, 40, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.tarjeta-articulo:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(30, 50, 40, 0.08);
+}
+
+.articulo-categoria {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #9a7b48;
+
+    font-size: 0.72rem;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tarjeta-articulo h3 {
+    margin-bottom: 14px;
+
+    color: #24352d;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+
+    font-weight: normal;
+}
+
+.tarjeta-articulo p {
+    max-width: 680px;
+
+    color: #66716c;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* Adaptación para celular */
+
+@media (max-width: 700px) {
+
+    .header-articulos {
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+
+    .header-articulos h1 {
+        font-size: 2.35rem;
+    }
+
+    .seccion-articulos {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .tarjeta-articulo {
+        padding: 26px 24px;
+    }
+
+}
+/* =========================================
    ACCESIBILIDAD
    ========================================= */
 
