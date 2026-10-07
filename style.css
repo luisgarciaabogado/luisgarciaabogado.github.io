@@ -246,14 +246,17 @@ section:last-of-type h3 {
 
     transform: translateY(-1px);
 }
-   /* Fondo ornamental de contacto */
+
+/* Fondo ornamental de contacto */
 #contacto {
     background-image: url("fondo-contacto.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
 
+    padding-left: 35px;
+    padding-right: 35px;
+}
 
 
 /* =========================================
