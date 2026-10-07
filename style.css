@@ -588,6 +588,9 @@ footer {
     box-shadow: 0 8px 30px rgba(30, 50, 40, 0.18);
 }
 
+.accesibilidad-panel.activo {
+    display: block;
+}
 .accesibilidad-panel h2 {
     margin-bottom: 18px;
 
