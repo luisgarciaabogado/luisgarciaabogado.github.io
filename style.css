@@ -465,7 +465,7 @@ footer {
 }
 
 .nav-titulo {
-    color: #3f3528;
+    color: #3b3025;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 0.9rem;
     white-space: nowrap;
@@ -477,7 +477,7 @@ footer {
 }
 
 .nav-enlaces a {
-    color: #56615c;
+    color: #3b3025;
     text-decoration: none;
 
     font-size: 0.78rem;
@@ -488,7 +488,6 @@ footer {
 
     transition: color 0.2s ease;
 }
-
 .nav-enlaces a:hover {
     color: #2f7251;
 }
