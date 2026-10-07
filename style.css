@@ -807,3 +807,22 @@ body.alto-contraste .accesibilidad-panel button:hover {
 body.alto-contraste .accesibilidad-cerrar {
     color: #ffffff !important;
 }
+
+/* =========================================
+   RESALTAR ENLACES
+   ========================================= */
+
+body.enlaces-resaltados a:not(.accesibilidad-boton) {
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 3px;
+    font-weight: bold;
+}
+
+body.enlaces-resaltados .area-link {
+    border: 2px solid #2f7251;
+}
+
+body.enlaces-resaltados .boton {
+    text-decoration: underline !important;
+}
