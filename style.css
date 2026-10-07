@@ -819,20 +819,27 @@ footer {
         padding: 26px 24px;
     }
 
-    .simbolos-editoriales {
-        width: 100%;
-        justify-content: flex-end;
-        gap: 20px;
-        padding-right: 0;
-    }
+  .simbolos-editoriales {
+    width: 170px;
+    height: 150px;
 
-    .simbolo-torre {
-        width: 65px;
-    }
+    align-self: flex-end;
+    margin-right: 0;
+}
 
-    .simbolo-caballo {
-        width: 75px;
-    }
+.simbolo-torre {
+    width: 105px;
+
+    right: 50px;
+    bottom: 0;
+}
+
+.simbolo-caballo {
+    width: 95px;
+
+    right: 0;
+    bottom: 25px;
+}
 
 }
 
