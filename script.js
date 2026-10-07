@@ -141,3 +141,22 @@ botonContraste.addEventListener("click", function () {
     );
 
 });
+
+/* =========================================
+   RESALTAR ENLACES
+   ========================================= */
+
+const botonResaltarEnlaces =
+    document.getElementById("resaltar-enlaces");
+
+botonResaltarEnlaces.addEventListener("click", function () {
+
+    const enlacesActivos =
+        document.body.classList.toggle("enlaces-resaltados");
+
+    botonResaltarEnlaces.setAttribute(
+        "aria-pressed",
+        enlacesActivos
+    );
+
+});
