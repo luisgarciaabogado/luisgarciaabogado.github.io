@@ -830,6 +830,17 @@ footer {
     transform: translateX(4px);
 }
 
+/* =========================================
+   ARTÍCULO INDIVIDUAL
+   ========================================= */
+
+.pagina-articulo {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 35px 90px;
+}
+
+/* ...resto del código... */
 /* Adaptación para celular */
 
 @media (max-width: 700px) {
