@@ -432,3 +432,11 @@ footer {
     }
 
 }
+/* =========================================
+   REGRESAR AL INICIO
+   ========================================= */
+
+.regresar-inicio {
+    padding: 25px 0 45px;
+    text-align: right;
+}
