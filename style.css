@@ -689,10 +689,10 @@ footer {
 .simbolo-torre {
     width: 155px;
 
-    right: 155px;
-    bottom: 0;
+    right: 130px;
+    bottom: 20px;
 
-    opacity: 0.80;
+    opacity: 0.58;
 
     z-index: 2;
 }
