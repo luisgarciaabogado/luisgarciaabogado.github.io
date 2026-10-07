@@ -644,27 +644,37 @@ footer {
 /* Símbolos editoriales */
 
 .simbolos-editoriales {
+    position: relative;
     flex-shrink: 0;
 
-    display: flex;
-    align-items: flex-end;
-    gap: 28px;
+    width: 240px;
+    height: 230px;
 
-    padding-right: 15px;
+    margin-right: 20px;
 }
 
 .simbolos-editoriales img {
+    position: absolute;
     display: block;
     object-fit: contain;
-    opacity: 0.72;
+
+    opacity: 0.32;
 }
 
+/* Torre: firme y asentada */
 .simbolo-torre {
-    width: 95px;
+    width: 155px;
+
+    right: 65px;
+    bottom: 0;
 }
 
+/* Caballo: ligeramente adelantado y elevado */
 .simbolo-caballo {
-    width: 110px;
+    width: 135px;
+
+    right: 0;
+    bottom: 35px;
 }
 .articulos-etiqueta {
     display: block;
