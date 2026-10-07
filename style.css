@@ -840,7 +840,41 @@ footer {
     padding: 80px 35px 90px;
 }
 
-/* ...resto del código... */
+.articulo-completo {
+    max-width: 780px;
+}
+
+.articulo-completo h1 {
+    margin-top: 18px;
+    margin-bottom: 28px;
+
+    color: #17221d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: normal;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.articulo-entrada {
+    margin-bottom: 45px;
+
+    color: #62615b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.contenido-articulo {
+    color: #3f4944;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.pagina-articulo .regresar-inicio {
+    max-width: 780px;
+    margin-top: 65px;
+}
 /* Adaptación para celular */
 
 @media (max-width: 700px) {
