@@ -654,6 +654,19 @@ footer {
 }
 
 /* Configuración general */
+/* Símbolos editoriales */
+
+.simbolos-editoriales {
+    position: relative;
+    flex-shrink: 0;
+
+    width: 330px;
+    height: 280px;
+
+    margin-right: 10px;
+}
+
+/* Configuración general */
 .simbolos-editoriales img {
     position: absolute;
     display: block;
@@ -682,30 +695,6 @@ footer {
     opacity: 0.80;
 
     z-index: 2;
-}
-
-.simbolos-editoriales img {
-    position: absolute;
-    display: block;
-    object-fit: contain;
-
-    opacity: 0.32;
-}
-
-/* Torre: firme y asentada */
-.simbolo-torre {
-    width: 155px;
-
-    right: 65px;
-    bottom: 0;
-}
-
-/* Caballo: ligeramente adelantado y elevado */
-.simbolo-caballo {
-    width: 135px;
-
-    right: 0;
-    bottom: 35px;
 }
 .articulos-etiqueta {
     display: block;
@@ -872,7 +861,6 @@ footer {
     bottom: 25px;
 }
 
-}
 
 }
 /* =========================================
