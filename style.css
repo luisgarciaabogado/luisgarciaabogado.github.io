@@ -245,7 +245,7 @@ section:last-of-type h3 {
     background: #245c40;
 
     transform: translateY(-1px);
-
+}
    /* Fondo ornamental de contacto */
 #contacto {
     background-image: url("fondo-contacto.png");
