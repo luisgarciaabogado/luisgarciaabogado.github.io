@@ -249,13 +249,36 @@ section:last-of-type h3 {
 
 /* Fondo ornamental de contacto */
 #contacto {
+    position: relative;
+
+    padding-left: 35px;
+    padding-right: 35px;
+
+    overflow: hidden;
+}
+
+/* Imagen ornamental en transparencia */
+#contacto::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
     background-image: url("fondo-contacto.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    padding-left: 35px;
-    padding-right: 35px;
+    opacity: 0.45;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Mantiene texto y botón por encima del fondo */
+#contacto > * {
+    position: relative;
+    z-index: 1;
 }
 
 
