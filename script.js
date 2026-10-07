@@ -179,3 +179,107 @@ botonTextoLegible.addEventListener("click", function () {
     );
 
 });
+
+/* =========================================
+   LECTURA POR VOZ
+   ========================================= */
+
+const botonLeer =
+    document.getElementById("leer-pagina");
+
+const botonPausar =
+    document.getElementById("pausar-lectura");
+
+const botonDetener =
+    document.getElementById("detener-lectura");
+
+let lecturaActual = null;
+let lecturaPausada = false;
+
+
+/* LEER PÁGINA */
+
+botonLeer.addEventListener("click", function () {
+
+    /* Detener cualquier lectura anterior */
+
+    window.speechSynthesis.cancel();
+
+    /* Obtener únicamente el contenido principal */
+
+    const contenidoPrincipal =
+        document.querySelector("main");
+
+    if (!contenidoPrincipal) {
+        return;
+    }
+
+    const texto =
+        contenidoPrincipal.innerText;
+
+    /* Crear la lectura */
+
+    lecturaActual =
+        new SpeechSynthesisUtterance(texto);
+
+    lecturaActual.lang = "es-MX";
+
+    lecturaActual.rate = 1;
+    lecturaActual.pitch = 1;
+
+    /* Comenzar lectura */
+
+    window.speechSynthesis.speak(lecturaActual);
+
+    lecturaPausada = false;
+
+    botonPausar.textContent =
+        "⏸ Pausar lectura";
+
+});
+
+
+/* PAUSAR O CONTINUAR */
+
+botonPausar.addEventListener("click", function () {
+
+    if (!window.speechSynthesis.speaking) {
+        return;
+    }
+
+    if (lecturaPausada) {
+
+        window.speechSynthesis.resume();
+
+        lecturaPausada = false;
+
+        botonPausar.textContent =
+            "⏸ Pausar lectura";
+
+    } else {
+
+        window.speechSynthesis.pause();
+
+        lecturaPausada = true;
+
+        botonPausar.textContent =
+            "▶ Continuar lectura";
+
+    }
+
+});
+
+
+/* DETENER LECTURA */
+
+botonDetener.addEventListener("click", function () {
+
+    window.speechSynthesis.cancel();
+
+    lecturaActual = null;
+    lecturaPausada = false;
+
+    botonPausar.textContent =
+        "⏸ Pausar lectura";
+
+});
