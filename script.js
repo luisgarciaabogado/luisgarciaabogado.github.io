@@ -283,3 +283,61 @@ botonDetener.addEventListener("click", function () {
         "⏸ Pausar lectura";
 
 });
+
+/* =========================================
+   RESTABLECER ACCESIBILIDAD
+   ========================================= */
+
+const botonRestablecer =
+    document.getElementById("restablecer-accesibilidad");
+
+botonRestablecer.addEventListener("click", function () {
+
+    /* RESTABLECER TAMAÑO DEL TEXTO */
+
+    tamanoTexto = 100;
+
+    document.documentElement.style.fontSize = "100%";
+
+
+    /* DESACTIVAR ALTO CONTRASTE */
+
+    document.body.classList.remove("alto-contraste");
+
+    botonContraste.setAttribute(
+        "aria-pressed",
+        "false"
+    );
+
+
+    /* DESACTIVAR RESALTADO DE ENLACES */
+
+    document.body.classList.remove("enlaces-resaltados");
+
+    botonResaltarEnlaces.setAttribute(
+        "aria-pressed",
+        "false"
+    );
+
+
+    /* DESACTIVAR TEXTO LEGIBLE */
+
+    document.body.classList.remove("texto-legible");
+
+    botonTextoLegible.setAttribute(
+        "aria-pressed",
+        "false"
+    );
+
+
+    /* DETENER LECTURA POR VOZ */
+
+    window.speechSynthesis.cancel();
+
+    lecturaActual = null;
+    lecturaPausada = false;
+
+    botonPausar.textContent =
+        "⏸ Pausar lectura";
+
+});
