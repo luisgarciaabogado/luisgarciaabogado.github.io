@@ -122,3 +122,22 @@ botonAumentar.addEventListener("click", function () {
     }
 
 });
+
+/* =========================================
+   ALTO CONTRASTE
+   ========================================= */
+
+const botonContraste =
+    document.getElementById("alto-contraste");
+
+botonContraste.addEventListener("click", function () {
+
+    const contrasteActivo =
+        document.body.classList.toggle("alto-contraste");
+
+    botonContraste.setAttribute(
+        "aria-pressed",
+        contrasteActivo
+    );
+
+});
