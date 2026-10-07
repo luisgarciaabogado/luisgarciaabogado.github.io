@@ -693,3 +693,117 @@ footer {
         width: 250px;
     }
 }
+
+/* =========================================
+   MODO ALTO CONTRASTE
+   ========================================= */
+
+body.alto-contraste {
+    background: #000000;
+    color: #ffffff;
+}
+
+body.alto-contraste::before {
+    background: #ffff00;
+}
+
+body.alto-contraste header,
+body.alto-contraste main,
+body.alto-contraste footer {
+    color: #ffffff;
+}
+
+body.alto-contraste header {
+    border-bottom-color: #ffffff;
+}
+
+body.alto-contraste header h1,
+body.alto-contraste header p,
+body.alto-contraste section h2,
+body.alto-contraste section h3,
+body.alto-contraste section p {
+    color: #ffffff;
+}
+
+body.alto-contraste section {
+    border-bottom-color: #ffffff;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+body.alto-contraste .navbar {
+    background: #000000;
+    border-bottom-color: #ffffff;
+}
+
+body.alto-contraste .nav-titulo,
+body.alto-contraste .nav-enlaces a {
+    color: #ffff00;
+}
+
+
+/* TARJETAS */
+
+body.alto-contraste .area,
+body.alto-contraste .servicios-detalle > div {
+    background: #000000;
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+body.alto-contraste .area h3,
+body.alto-contraste .area p,
+body.alto-contraste .servicios-detalle h3,
+body.alto-contraste .servicios-detalle p {
+    color: #ffffff;
+}
+
+body.alto-contraste .area::before {
+    background: #ffff00;
+}
+
+body.alto-contraste .ver-mas,
+body.alto-contraste .volver {
+    color: #ffff00;
+}
+
+
+/* BOTÓN DE WHATSAPP */
+
+body.alto-contraste .boton {
+    background: #ffff00;
+    color: #000000;
+}
+
+
+/* PANEL DE ACCESIBILIDAD */
+
+body.alto-contraste .accesibilidad-boton {
+    background: #ffff00;
+    color: #000000;
+}
+
+body.alto-contraste .accesibilidad-panel {
+    background: #000000;
+    border-color: #ffffff;
+}
+
+body.alto-contraste .accesibilidad-panel h2 {
+    color: #ffffff;
+}
+
+body.alto-contraste .accesibilidad-panel button {
+    background: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.alto-contraste .accesibilidad-panel button:hover {
+    background: #ffff00;
+    color: #000000;
+}
+
+body.alto-contraste .accesibilidad-cerrar {
+    color: #ffffff !important;
+}
