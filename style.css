@@ -446,8 +446,8 @@ footer {
 
 .navbar {
     width: 100%;
-    background: #e9e1d6;
-    border-bottom: 1px solid #d4c8b9;
+    background: #c8b38f;
+    border-bottom: 1px solid #b39a72;
 }
 
 .nav-contenido {
@@ -465,12 +465,11 @@ footer {
 }
 
 .nav-titulo {
-    color: #66594d;
+    color: #3f3528;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 0.9rem;
     white-space: nowrap;
 }
-
 .nav-enlaces {
     display: flex;
     align-items: center;
