@@ -64,3 +64,61 @@ document.addEventListener("keydown", function (event) {
     }
 
 });
+
+/* =========================================
+   TAMAÑO DEL TEXTO
+   ========================================= */
+
+const botonReducir =
+    document.getElementById("texto-reducir");
+
+const botonNormal =
+    document.getElementById("texto-normal");
+
+const botonAumentar =
+    document.getElementById("texto-aumentar");
+
+let tamanoTexto = 100;
+
+
+/* REDUCIR TEXTO */
+
+botonReducir.addEventListener("click", function () {
+
+    if (tamanoTexto > 80) {
+
+        tamanoTexto -= 10;
+
+        document.documentElement.style.fontSize =
+            tamanoTexto + "%";
+
+    }
+
+});
+
+
+/* RESTABLECER TEXTO */
+
+botonNormal.addEventListener("click", function () {
+
+    tamanoTexto = 100;
+
+    document.documentElement.style.fontSize = "100%";
+
+});
+
+
+/* AUMENTAR TEXTO */
+
+botonAumentar.addEventListener("click", function () {
+
+    if (tamanoTexto < 150) {
+
+        tamanoTexto += 10;
+
+        document.documentElement.style.fontSize =
+            tamanoTexto + "%";
+
+    }
+
+});
