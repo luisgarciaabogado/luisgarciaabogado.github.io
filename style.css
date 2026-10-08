@@ -606,17 +606,21 @@ footer {
         gap: 12px;
     }
 
-    .nav-enlaces {
-        width: 100%;
-        gap: 18px;
+   
+.nav-enlaces {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+    row-gap: 12px;
+}
 
-        overflow-x: auto;
-        white-space: nowrap;
-    }
+.nav-enlaces a {
+    font-size: 0.72rem;
+    white-space: normal;
+    line-height: 1.4;
+}
 
-    .nav-enlaces a {
-        font-size: 0.72rem;
-    }
 
 }
 
