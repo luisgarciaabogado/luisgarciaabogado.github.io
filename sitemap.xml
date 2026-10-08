@@ -1,37 +1,46 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/</loc>
+        <loc>https://luisgarciaabogados.com/</loc>
     </url>
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/corporativo.html</loc>
+        <loc>https://luisgarciaabogados.com/corporativo.html</loc>
     </url>
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/fiscal-administrativo.html</loc>
+        <loc>https://luisgarciaabogados.com/fiscal-administrativo.html</loc>
     </url>
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/contratos.html</loc>
+        <loc>https://luisgarciaabogados.com/contratos.html</loc>
     </url>
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/propiedad-intelectual.html</loc>
+        <loc>https://luisgarciaabogados.com/propiedad-intelectual.html</loc>
     </url>
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/cobranza.html</loc>
+        <loc>https://luisgarciaabogados.com/cobranza.html</loc>
     </url>
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/proteccion-datos.html</loc>
+        <loc>https://luisgarciaabogados.com/proteccion-datos.html</loc>
     </url>
 
     <url>
-        <loc>https://luisgarciaabogado.github.io/cumplimiento-normativo.html</loc>
+        <loc>https://luisgarciaabogados.com/cumplimiento-normativo.html</loc>
+    </url>
+
+    <url>
+        <loc>https://luisgarciaabogados.com/articulos.html</loc>
+    </url>
+
+    <url>
+        <loc>https://luisgarciaabogados.com/silencio-administrativo.html</loc>
     </url>
 
 </urlset>
