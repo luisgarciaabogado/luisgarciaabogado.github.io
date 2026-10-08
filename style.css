@@ -869,6 +869,10 @@ footer {
     color: #3f4944;
     font-size: 1rem;
     line-height: 1.85;
+
+    text-align: justify;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 /* =========================================
    PRESENTACIÓN DEL CONTENIDO DEL ARTÍCULO
