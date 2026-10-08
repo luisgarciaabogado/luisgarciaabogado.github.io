@@ -569,6 +569,13 @@ footer {
     text-transform: uppercase;
     white-space: nowrap;
 }
+
+#fecha-hora-culiacan {
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
 .nav-enlaces {
     display: flex;
     align-items: center;
