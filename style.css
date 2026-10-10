@@ -940,6 +940,31 @@ footer {
     max-width: 780px;
     margin-top: 65px;
 }
+/* MARCA DE AGUA EN ARTÍCULOS */
+
+.articulo-completo {
+    position: relative;
+    isolation: isolate;
+}
+
+.marca-agua {
+    position: absolute;
+    top: 260px;
+    left: 55%;
+    width: 650px;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.marca-agua.torre {
+    background-image: url("torre.png");
+}
+
 /* Adaptación para celular */
 
 @media (max-width: 700px) {
