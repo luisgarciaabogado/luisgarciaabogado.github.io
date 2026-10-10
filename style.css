@@ -958,11 +958,16 @@ footer {
     background-size: contain;
     opacity: 0.05;
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;
 }
 
 .marca-agua.torre {
     background-image: url("torre.png");
+}
+
+.articulo-completo > :not(.marca-agua) {
+    position: relative;
+    z-index: 1;
 }
 
 /* Adaptación para celular */
