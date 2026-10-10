@@ -1393,3 +1393,25 @@ body.texto-legible p {
     }
 
 }
+
+/* JUSTIFICACIÓN EDITORIAL DE PÁRRAFOS */
+
+@media (min-width: 769px) {
+
+    .texto-editorial section > p {
+        text-align: justify;
+        hyphens: auto;
+    }
+
+}
+
+/* LECTURA EN PANTALLAS PEQUEÑAS */
+
+@media (max-width: 768px) {
+
+    .texto-editorial section > p {
+        text-align: left;
+        hyphens: none;
+    }
+
+}
