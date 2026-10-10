@@ -1369,3 +1369,27 @@ body.texto-legible button {
 body.texto-legible p {
     line-height: 1.9;
 }
+
+/* MARCAS DE AGUA EN ARTÍCULOS - VERSIÓN MÓVIL */
+
+@media (max-width: 768px) {
+
+    .articulo-completo .marca-agua {
+        top: 280px;
+        left: 12%;
+        width: 85%;
+        height: 600px;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.05;
+    }
+
+    .articulo-completo .marca-agua.caballo {
+        top: 320px;
+        left: 0;
+        width: 115%;
+        height: 810px;
+        opacity: 0.05;
+    }
+
+}
