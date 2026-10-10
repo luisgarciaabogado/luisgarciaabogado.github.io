@@ -963,9 +963,7 @@ footer {
 
 .marca-agua.torre {
     background-image: url("torre.png");
-    opacity: 1;
-    background-color: #d8e0da;
-    border: 3px solid red;
+    opacity: 0.07;
 }
 
 .articulo-completo > :not(.marca-agua) {
