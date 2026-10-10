@@ -1375,8 +1375,8 @@ body.texto-legible p {
 @media (max-width: 768px) {
 
     .articulo-completo .marca-agua {
-        top: 280px;
-        left: 12%;
+        top: 430px;
+        left: 48%;
         width: 85%;
         height: 600px;
         background-position: center;
@@ -1385,8 +1385,8 @@ body.texto-legible p {
     }
 
     .articulo-completo .marca-agua.caballo {
-        top: 320px;
-        left: 0;
+        top: 470px;
+        left: 35%;
         width: 115%;
         height: 810px;
         opacity: 0.05;
