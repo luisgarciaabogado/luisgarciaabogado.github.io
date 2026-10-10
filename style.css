@@ -969,7 +969,19 @@ footer {
 
 .marca-agua.torre {
     background-image: url("torre.png");
-    opacity: 0.07;
+    opacity: 0.05;
+    background-color: transparent;
+    border: none;
+}
+
+/* Marca de agua del artículo sobre domicilio fiscal */
+
+.marca-agua.caballo {
+    background-image: url("caballo.png");
+    width: 810px;
+    height: 1053px;
+    left: 42%;
+    opacity: 0.05;
 }
 
 .articulo-completo > :not(.marca-agua) {
