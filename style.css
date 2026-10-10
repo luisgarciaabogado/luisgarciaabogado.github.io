@@ -1415,3 +1415,9 @@ body.texto-legible p {
     }
 
 }
+
+/* SEPARACIÓN ENTRE PÁRRAFOS DEL PERFIL PROFESIONAL */
+
+.texto-editorial section > p + p {
+    margin-top: 1.5em;
+}
