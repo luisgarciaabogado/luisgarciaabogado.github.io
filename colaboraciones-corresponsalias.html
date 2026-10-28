@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Colaboraciones y corresponsalías jurídicas en Culiacán | Luis García</title>
+
+    <meta name="description"
+          content="Servicios de corresponsalía y colaboración jurídica en Culiacán, Sinaloa. Apoyo a despachos, abogados y empresas en diligencias, litigios y gestiones legales.">
+
+    <link rel="canonical"
+          href="https://luisgarciaabogados.com/colaboraciones-corresponsalias.html">
+
+    <link rel="icon"
+          type="image/png"
+          href="icon.png">
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+<!-- NAVEGACIÓN -->
+<nav class="navbar">
+    <div class="nav-contenido">
+
+        <span class="nav-titulo">
+            Culiacán, MX.
+            <span id="fecha-hora-culiacan"></span>
+        </span>
+
+        <div class="nav-enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#areas-atencion">Áreas de atención</a>
+            <a href="articulos.html">Artículos</a>
+            <a href="index.html#contacto">Contacto</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="texto-editorial">
+
+    <section>
+
+        <h1>Colaboraciones y corresponsalías</h1>
+
+        <p>
+            Ofrezco servicios de colaboración y corresponsalía
+            jurídica para despachos, abogados independientes
+            y empresas que requieren apoyo profesional en
+            Culiacán y otras localidades de Sinaloa.
+        </p>
+
+        <p>
+            La colaboración puede comprender actuaciones
+            específicas, seguimiento de asuntos o apoyo
+            jurídico continuo, conforme a las necesidades
+            de cada caso.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Servicios de corresponsalía</h2>
+
+        <p>
+            Brindo apoyo en la atención de asuntos judiciales
+            y administrativos, entre otros:
+        </p>
+
+        <ul>
+            <li>
+                Seguimiento y consulta de expedientes.
+            </li>
+
+            <li>
+                Presentación de escritos, promociones
+                y recursos.
+            </li>
+
+            <li>
+                Comparecencias y diligencias ante
+                autoridades competentes.
+            </li>
+
+            <li>
+                Elaboración y revisión de documentos jurídicos.
+            </li>
+
+            <li>
+                Apoyo en procedimientos civiles,
+                mercantiles, fiscales y administrativos.
+            </li>
+
+            <li>
+                Gestiones jurídicas y administrativas
+                por encargo.
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h2>Colaboración con despachos y empresas</h2>
+
+        <p>
+            Los servicios están dirigidos a profesionistas
+            y organizaciones que necesitan atender asuntos
+            jurídicos en Sinaloa sin contar necesariamente
+            con presencia permanente en la entidad.
+        </p>
+
+        <p>
+            Cada colaboración se desarrolla conforme
+            al alcance previamente acordado, procurando
+            una comunicación clara, seguimiento oportuno
+            y respeto a la relación profesional con
+            el cliente de origen.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Modalidades de colaboración</h2>
+
+        <p>
+            Es posible establecer colaboraciones para
+            diligencias individuales, asuntos determinados
+            o apoyo recurrente, según la naturaleza
+            y necesidades del servicio solicitado.
+        </p>
+
+        <p>
+            Los honorarios, gastos y condiciones de
+            intervención se definen previamente
+            entre las partes.
+        </p>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+
+        <h2>Solicitar colaboración</h2>
+
+        <p>
+            Si requiere apoyo jurídico o servicios de
+            corresponsalía en Culiacán o Sinaloa,
+            puede comunicarse para consultar
+            disponibilidad y condiciones de colaboración.
+        </p>
+
+        <a class="boton"
+           href="https://wa.me/526676974599?text=Hola%20Lic.%20Luis%20Garc%C3%ADa%2C%20me%20interesa%20consultar%20sus%20servicios%20de%20colaboraci%C3%B3n%20y%20corresponsal%C3%ADa%20jur%C3%ADdica."
+           target="_blank"
+           rel="noopener noreferrer">
+            Contactar por WhatsApp
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Luis Alberto García Medina · Abogado
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+function actualizarFechaHora() {
+    const ahora = new Date();
+
+    const formato = new Intl.DateTimeFormat("es-MX", {
+        timeZone: "America/Mazatlan",
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hourCycle: "h23"
+    });
+
+    const elemento = document.getElementById("fecha-hora-culiacan");
+
+    if (elemento) {
+        elemento.textContent = " | " + formato.format(ahora);
+    }
+}
+
+actualizarFechaHora();
+setInterval(actualizarFechaHora, 30000);
+</script>
+
+</body>
+</html>
