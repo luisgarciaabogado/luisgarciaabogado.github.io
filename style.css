@@ -114,7 +114,7 @@ header p {
 /* VIDEO INSTITUCIONAL */
 
 .video-institucional {
-    width: 150px;
+    width: 210px;
     flex-shrink: 0;
     position: relative;
 }
@@ -406,7 +406,7 @@ footer {
 .header-inicio {
     flex-direction: column;
     align-items: flex-start;
-    gap: 35px;
+    gap: 20px;
 }
 
 .ultimas-noticias {
