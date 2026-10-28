@@ -91,22 +91,71 @@ header p {
    ÚLTIMAS NOTICIAS EN ENCABEZADO
    ========================================= */
 
+
 .header-inicio {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 70px;
+    gap: 35px;
 }
 
 .identidad {
     flex: 1;
+    min-width: 0;
 }
 
 .ultimas-noticias {
-    width: 300px;
+    width: 260px;
+    flex-shrink: 0;
     padding-left: 28px;
     border-left: 1px solid #c8b38f;
 }
+
+/* VIDEO INSTITUCIONAL */
+
+.video-institucional {
+    width: 150px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.video-institucional video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #17221d;
+}
+
+.video-controles {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.video-controles button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d8ccb7;
+    border-radius: 3px;
+    background: transparent;
+    color: #56615c;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.video-controles button:hover {
+    color: #2f7251;
+    border-color: #2f7251;
+}
+
+.video-institucional video:fullscreen {
+    object-fit: contain;
+    background: #000000;
+}
+
 
 .noticias-etiqueta {
     display: block;
@@ -368,6 +417,17 @@ footer {
     border-left: none;
     border-top: 1px solid #c8b38f;
 }
+
+   
+.video-institucional {
+    width: 135px;
+    align-self: center;
+}
+
+.video-controles {
+    margin-top: 8px;
+}
+
    
     header h1 {
         font-size: 2.7rem;
