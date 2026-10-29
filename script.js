@@ -341,3 +341,204 @@ botonRestablecer.addEventListener("click", function () {
         "⏸ Pausar lectura";
 
 });
+
+
+
+/* =========================================
+   CARRUSEL DE VIDEOS INFORMATIVOS
+   ========================================= */
+
+const videoInicio = document.getElementById("video-inicio");
+
+if (videoInicio) {
+
+    /* LISTA DE VIDEOS */
+
+    const listaVideos = [
+        "video-institucional.mp4",
+        "reformas-2027.mp4"
+    ];
+
+    let indiceVideo = 0;
+    let reproduccionPausada = false;
+
+    /* BOTONES DEL REPRODUCTOR */
+
+    const videoAnterior =
+        document.getElementById("video-anterior");
+
+    const videoSiguiente =
+        document.getElementById("video-siguiente");
+
+    const videoPausar =
+        document.getElementById("video-pausar");
+
+    const videoSonido =
+        document.getElementById("video-sonido");
+
+    const videoAmpliar =
+        document.getElementById("video-ampliar");
+
+    const contenedorVideo =
+        document.querySelector(".video-institucional");
+
+
+    /* SONIDO DESACTIVADO POR DEFECTO */
+
+    videoInicio.muted = true;
+
+    videoSonido.textContent = "🔇";
+
+
+    /* CAMBIAR DE VIDEO */
+
+    function cambiarVideo(nuevoIndice) {
+
+        indiceVideo =
+            (nuevoIndice + listaVideos.length) %
+            listaVideos.length;
+
+        videoInicio.src = listaVideos[indiceVideo];
+
+        videoInicio.load();
+
+        if (!reproduccionPausada) {
+
+            videoInicio.play().catch(function () {
+                /* El navegador puede bloquear la reproducción */
+            });
+
+        }
+
+    }
+
+
+    /* VIDEO ANTERIOR */
+
+    videoAnterior.addEventListener("click", function () {
+
+        cambiarVideo(indiceVideo - 1);
+
+    });
+
+
+    /* VIDEO SIGUIENTE */
+
+    videoSiguiente.addEventListener("click", function () {
+
+        cambiarVideo(indiceVideo + 1);
+
+    });
+
+
+    /* AVANCE AUTOMÁTICO AL TERMINAR */
+
+    videoInicio.addEventListener("ended", function () {
+
+        if (!reproduccionPausada) {
+
+            cambiarVideo(indiceVideo + 1);
+
+        }
+
+    });
+
+
+    /* ACTIVAR O DESACTIVAR SONIDO */
+
+    videoSonido.addEventListener("click", function () {
+
+        videoInicio.muted = !videoInicio.muted;
+
+        if (videoInicio.muted) {
+
+            videoSonido.textContent = "🔇";
+
+            videoSonido.setAttribute(
+                "aria-label",
+                "Activar sonido"
+            );
+
+        } else {
+
+            videoSonido.textContent = "🔊";
+
+            videoSonido.setAttribute(
+                "aria-label",
+                "Desactivar sonido"
+            );
+
+        }
+
+    });
+
+
+    /* PAUSAR O REPRODUCIR */
+
+    videoPausar.addEventListener("click", function () {
+
+        if (videoInicio.paused) {
+
+            reproduccionPausada = false;
+
+            videoInicio.play().catch(function () {
+                /* Reproducción no permitida */
+            });
+
+        } else {
+
+            reproduccionPausada = true;
+
+            videoInicio.pause();
+
+        }
+
+    });
+
+
+    /* ACTUALIZAR BOTÓN DE PAUSA */
+
+    videoInicio.addEventListener("play", function () {
+
+        videoPausar.textContent = "❚❚";
+
+        videoPausar.setAttribute(
+            "aria-label",
+            "Pausar video"
+        );
+
+    });
+
+    videoInicio.addEventListener("pause", function () {
+
+        videoPausar.textContent = "▶";
+
+        videoPausar.setAttribute(
+            "aria-label",
+            "Reproducir video"
+        );
+
+    });
+
+
+    /* PANTALLA COMPLETA */
+
+    videoAmpliar.addEventListener("click", function () {
+
+        if (document.fullscreenElement) {
+
+            document.exitFullscreen();
+
+        } else if (contenedorVideo.requestFullscreen) {
+
+            contenedorVideo.requestFullscreen();
+
+        } else if (videoInicio.webkitEnterFullscreen) {
+
+            videoInicio.webkitEnterFullscreen();
+
+        }
+
+    });
+
+}
