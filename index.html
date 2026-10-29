@@ -174,34 +174,47 @@
     </div>
 
     
+
 <div class="video-institucional">
+
+    <button type="button" id="video-anterior"
+        class="video-flecha video-flecha-izquierda"
+        aria-label="Video anterior">
+        &#10094;
+    </button>
 
     <video
         id="video-inicio"
         autoplay
         muted
-        loop
         playsinline
         preload="metadata"
-        aria-label="Video institucional de servicios jurídicos">
+        aria-label="Videos informativos de servicios jurídicos">
 
         <source src="video-institucional.mp4" type="video/mp4">
 
         Su navegador no admite la reproducción de video.
     </video>
 
+    <button type="button" id="video-siguiente"
+        class="video-flecha video-flecha-derecha"
+        aria-label="Video siguiente">
+        &#10095;
+    </button>
+
     <div class="video-controles">
 
-        <button
-            type="button"
-            id="video-pausar"
+        <button type="button" id="video-pausar"
             aria-label="Pausar video">
             ❚❚
         </button>
 
-        <button
-            type="button"
-            id="video-ampliar"
+        <button type="button" id="video-sonido"
+            aria-label="Activar sonido">
+            &#128263;
+        </button>
+
+        <button type="button" id="video-ampliar"
             aria-label="Ampliar video">
             ⛶
         </button>
