@@ -362,6 +362,62 @@ if (videoInicio) {
     let indiceVideo = 0;
     let reproduccionPausada = false;
 
+   
+    /* INDICADORES DEL CARRUSEL */
+
+    const contenedorIndicadores =
+        document.getElementById("video-indicadores");
+
+    function actualizarIndicadores() {
+
+        if (!contenedorIndicadores) return;
+
+        const indicadores =
+            contenedorIndicadores.querySelectorAll("button");
+
+        indicadores.forEach(function (indicador, indice) {
+
+            const activo = indice === indiceVideo;
+
+            indicador.classList.toggle("activo", activo);
+
+            indicador.setAttribute(
+                "aria-pressed",
+                String(activo)
+            );
+
+        });
+
+    }
+
+    if (contenedorIndicadores) {
+
+        listaVideos.forEach(function (archivo, indice) {
+
+            const indicador = document.createElement("button");
+
+            indicador.type = "button";
+
+            indicador.setAttribute(
+                "aria-label",
+                "Ver video " + (indice + 1)
+            );
+
+            indicador.addEventListener("click", function () {
+
+                cambiarVideo(indice);
+
+            });
+
+            contenedorIndicadores.appendChild(indicador);
+
+        });
+
+        actualizarIndicadores();
+
+    }
+
+   
     /* BOTONES DEL REPRODUCTOR */
 
     const videoAnterior =
@@ -392,13 +448,17 @@ if (videoInicio) {
 
     /* CAMBIAR DE VIDEO */
 
+   
     function cambiarVideo(nuevoIndice) {
 
         indiceVideo =
             (nuevoIndice + listaVideos.length) %
             listaVideos.length;
 
+        actualizarIndicadores();
+
         videoInicio.src = listaVideos[indiceVideo];
+
 
         videoInicio.load();
 
