@@ -1481,3 +1481,38 @@ body.texto-legible p {
 .texto-editorial section > p + p {
     margin-top: 1.5em;
 }
+
+
+/* Flechas del carrusel de videos */
+
+.video-institucional {
+    position: relative;
+}
+
+.video-flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 34px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 23px;
+    transition: background 0.2s ease;
+}
+
+.video-flecha:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.video-flecha-izquierda {
+    left: 8px;
+}
+
+.video-flecha-derecha {
+    right: 8px;
+}
