@@ -415,53 +415,6 @@
 
     
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const video = document.getElementById("video-inicio");
-    const botonPausar = document.getElementById("video-pausar");
-    const botonAmpliar = document.getElementById("video-ampliar");
-
-    if (!video || !botonPausar || !botonAmpliar) {
-        return;
-    }
-
-    botonPausar.addEventListener("click", function () {
-
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
-        }
-
-    });
-
-    video.addEventListener("play", function () {
-        botonPausar.textContent = "❚❚";
-        botonPausar.setAttribute("aria-label", "Pausar video");
-    });
-
-    video.addEventListener("pause", function () {
-        botonPausar.textContent = "▶";
-        botonPausar.setAttribute("aria-label", "Reproducir video");
-    });
-
-    botonAmpliar.addEventListener("click", function () {
-
-        if (document.fullscreenElement) {
-            document.exitFullscreen();
-        } else if (video.requestFullscreen) {
-            video.requestFullscreen();
-        } else if (video.webkitEnterFullscreen) {
-            video.webkitEnterFullscreen();
-        }
-
-    });
-
-});
-</script>
-
-    
-<script>
 function actualizarFechaHora() {
     const ahora = new Date();
 
